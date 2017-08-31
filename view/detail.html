@@ -1,0 +1,34 @@
+<link rel="stylesheet" type="text/css" href="css/detail.css">
+<ion-view >
+	<ion-content class="main_content"  has-bouncing='false'>
+		<div style="width: 100%;overflow: hidden;">
+			<div class="box" style="width: 3.2rem;height: 3.2rem;position: relative">
+				<img style="width: 3.2rem;height: 3.2rem;" ng-src="{{data[0].albumpic_big}}">
+				<div class="small_box focus__gradient">
+					<div class="small_box1">
+					<h4 style="font-size: 0.23rem;color: white;white-space: nowrap;width: 2.3rem;overflow: hidden;text-overflow: ellipsis;">{{topicname}}</h4>
+					<p  style="color: white;">2016-11-26更新</p>
+					<a ng-click="playall()" href="#/play">
+						
+					</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="liebiao" style="background: rgb(96, 96, 96);">
+				<dl ui-sref="play" ng-repeat="(key,list) in data" ng-click="play(list)">
+					<p style="color: white;">{{key+1}}</p>
+					<dt style="color: white;">{{list.songname}}</dt>
+					<dd style="color: rgba(255,255,255,.6)">{{list.singername}}</dd>
+				</dl>
+				
+				
+			</div>
+		</div>
+
+		
+	</ion-content>
+	<div class="footer">
+			<a href="javascript:;">下载榜单歌曲</a>
+	</div>
+</ion-view>

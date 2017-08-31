@@ -1,0 +1,20 @@
+<link rel="stylesheet" type="text/css" href="css/list.css"/>
+<ion-view>
+<ion-content class="main_list">
+	<ion-list class="show">
+		 <a ng-click="Todetail(topic.id,topic.title)" ng-data="{{topic.id}}" class="item item-thumbnail-left" href="javascript:;" ng-repeat="topic in topics">
+		    <img ng-src="{{topic.img}}">
+
+		    <div style="float: right;">
+		    	<h3>{{topic.title}}</h3>
+			    <p>1 <span>{{topic.goods[0].songname}}</span>-{{topic.goods[0].singername}}</p>
+			    <p>2 <span>{{topic.goods[1].songname}}</span>-{{topic.goods[1].singername}}</p>
+			    <p>3 <span>{{topic.goods[2].songname}}</span>-{{topic.goods[2].singername}}</p>
+		    </div>
+			<i class="icon ion-ios-arrow-right"></i>
+	   	 </a>
+
+
+	</ion-list>
+</ion-content>
+</ion-view>

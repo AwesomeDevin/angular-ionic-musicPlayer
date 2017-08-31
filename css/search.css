@@ -1,0 +1,16 @@
+﻿.search_content div.content{display: flex;align-items: center;background: #f4f4f4;position: relative;}
+.search_content div input{width:2.05rem;height: 0.2rem;line-height: 0.2rem;color: #c1c1c1;margin-left: 0.1rem;}
+.search_content div i{width: 0.18rem;height: 0.18rem;display: block;background: url(../img/search.png) no-repeat;background-size: cover;margin-left: 0.05rem;}
+.search_content div button{border: 0;width:100%;height: 0.36rem;line-height: 0.36rem;position: relative;z-index: 100;right: 0;top: 0;color: #555;background: #f4f4f4;display: none;padding: 0;}
+.search_content div label{width: 3rem;height: 0.36rem;line-height: 0.36rem;background: white;display: flex;align-items: center;margin: 0 auto;position: relative;}
+.search_content   .scroll-bar-v{opacity: 0 !important;}
+.search_content div button.show{display: block;}
+.search_content{background: white !important;}
+.search_list .item{width: 100%;height: 0.55rem;padding: 0 0.1rem;min-height: 0.55rem;display: flex;align-items: center;position: relative;}
+.search_list .item img{position: initial;}
+.search_list .item i{width: 0.22rem;height: 0.2rem;background: url(../img/search_sprite.png) no-repeat;background-size: 0.22rem 0.3rem;margin-right:0.14rem;display: block;}
+.search_list .item div p{display:block;font-family: '黑体';}
+.search_list .item div {position: relative;margin-left: 0.05rem;}
+.search_list .item div h2{font-weight: 100;font-family: '黑体';color: #c1c1c1;}
+.search_list .item div p span{margin-left: 0.1rem;}
+.search_content  .scroll{height: 4.73rem;}

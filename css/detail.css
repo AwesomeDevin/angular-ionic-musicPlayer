@@ -1,0 +1,59 @@
+/*.bar-header.has-tabs-top, .tabs-top .bar-header{opacity: 0;}
+.tabs-top>.tabs, .tabs.tabs-top{opacity: 0;}
+.has-tabs-top {top: 0 !important;}
+*/
+.scroll-content{background: rgb(96, 96, 96);top: 0 !important;}
+.main_content  .small_box1{width: 100%;height: 0.82rem;position:absolute;bottom: 0;left: 0;padding: 0 0.15rem;}.
+.main_content img{width: 3.2rem;position: absolute;top: 0;left: 0;}
+.main_content  .small_box{width: 100%;height: 1.92rem;position: absolute;left:0;bottom: 0;
+						/* background: -webkit-linear-gradient(,rgb(224, 224, 224));*/ /* Safari 5.1 - 6.0 */
+						  /*background: -o-linear-gradient(, rgb(224, 224, 224)); /* Opera 11.1 - 12.0 */*/
+						  /*background: -moz-linear-gradient(, rgb(224, 224, 224)); /* Firefox 3.6 - 15 */*/
+						  /*background: linear-gradient(, rgb(224, 224, 224)); /* 标准的语法 */
+						  	background-image: -webkit-linear-gradient(top,transparent,rgb(96, 96, 96) 80%);
+						  	}*/
+.main_content  .small_box h4{font-size: 0.24rem !important;font-family: '宋体';line-height: 0.27rem;}
+.main_content  .small_box p{font-size: 0.13rem !important;line-height: 0.27rem;}
+.main_content  .small_box a{width: 0.48rem;height: 0.48rem;display: block;border:0.03rem solid white;position: absolute;right:0.15rem;top: 0;border-radius: 50%;}
+.main_content  .small_box a::before{content: '';width:0;height:0;border-color: transparent transparent transparent currentColor;
+    border-width: 0.09rem 0.15rem;
+    border-style: solid;color: white;font-size: 0; right: -7%;top: 30%;position: absolute;}
+
+
+.main_content  .small_box::before{content: "";
+    display: block;
+   height:1.92rem;position: absolute;top: 0;left: 0;width: 100%;}
+
+
+
+.main_content .liebiao{width: 100%;overflow: hidden;/*border: 1px solid rgba(0,0,0,.15);*/border-right: 0;border-left: 0;}
+.main_content .liebiao dl{width: 100%;height: 0.6rem;position: relative;}
+.main_content .liebiao dl:last-child dd{border: 0;}
+.main_content .liebiao dl p{width: 0.6rem;height: 0.6rem;position: absolute;left: 0;top: 0;text-align: center;line-height: 0.6rem;font-size: 0.18rem;font-weight:100;font-family: '黑体';}
+.main_content .liebiao dl dt{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 2.6rem;float: right;padding-right: :  0.15rem;font-weight:100;font-size: 0.18rem;line-height: 0.22rem;font-family: '宋体';height:0.3rem;padding-top: 0.1rem;}
+.main_content .liebiao dl dd{overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 2.6rem;float: right;padding-right: :  0.15rem;font-size: 0.14rem;line-height: 0.22rem;font-family: '宋体';border-bottom: 1px solid rgba(0,0,0,.15);height: 0.3rem;}
+
+
+.focus__gradient{position: absolute;
+			    bottom: 0;
+			    left: 0;
+			    z-index: 2;
+			    width: 100%;
+			    background-image: -webkit-linear-gradient(top,transparent,currentColor 90%);}
+
+
+
+.footer{width: 100%;height: 0.65rem;background: rgb(96, 96, 96);position: fixed;left: 0;bottom: 0;display: flex;align-items: center;}
+.footer a{display: -webkit-box;width: 3rem;height: 0.45rem;border: 1px solid white;border-radius: 0.03px;margin: 0 auto;text-align: center;color: white;font-size: 0.18rem;line-height: 0.45rem;
+	-webkit-box-pack: center;
+    -webkit-box-align: center;}
+.footer a::before{content: '';display:block;width: 0.24rem;height: 0.24rem;margin-right: 0.1rem;background: url(../img/icon.jpg);background-size: cover;}
+
+
+
+
+
+
+
+
+

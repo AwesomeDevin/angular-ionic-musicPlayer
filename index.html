@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+	<meta charset="UTF-8">
+	<title>扣扣音乐-DaiVon</title>
+	 <link rel="stylesheet" type="text/css" href="lib/css/ionic.min.css"/>
+	 <link rel="stylesheet" type="text/css" href="css/common.css"/>
+	 <link rel="SHORICUT ICON" type="text/css" href="img/icon.ico"/>
+	 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+	 <script type="text/javascript" src="lib/js/ionic.bundle.min.js"/></script>
+	 <script type="text/javascript" src="js/move.js"/></script>
+	 <script type="text/javascript" src="js/jquery-1.10.2.min.js"/></script>
+</head>
+<!-- 
+<style type="text/css">
+	body{background: #f4f4f4;}
+</style> -->
+<body>
+
+	<ion-nav-view></ion-nav-view>
+
+
+	<script type="text/javascript" src='controller/controller.js'/></script>
+	<script type="text/javascript">
+
+		angular.module("myapp",['ionic','myController']).config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider){
+			$stateProvider
+			.state('main',{
+				abstract:true,
+				templateUrl:'view/main.html'
+			}).state('main.advice',{
+				url:'/advice',
+				views:{
+					'main-advice':{
+						templateUrl:'view/advice.html'
+					}
+				}
+			}).state('main.list',{
+				url:'/list',
+				views:{
+					'main-list':{
+						templateUrl:'view/list.html',
+						controller:'listCtrl'
+					}
+				}
+			}).state('main.search',{
+				url:'/search',
+				views:{
+					'main-search':{
+						templateUrl:'view/search.html',
+						controller:'searchCtrl'
+					}
+				}
+			}).state('detail',{
+				cache: false,
+				url:'/detail',
+				// views:{
+				// 	'main-list':{
+						templateUrl:'view/detail.html',
+						controller:'detailCtrl'
+				// 	}
+				// }
+			}).state('play',{
+				url:'/play',
+				cache: false,
+				templateUrl:'view/play.html',
+				controller:'playCtrl'
+					
+				
+			})
+
+			$urlRouterProvider.otherwise("/advice");
+		}])
+
+
+
+
+
+
+
+
+
+		function resize() {
+			var clientwidth=document.documentElement.clientWidth;
+			document.documentElement.style.fontSize=100*(clientwidth/320)+'px';
+			
+		}
+		resize();
+		window.addEventListener('resize',resize);
+	</script>
+</body>
+</html>

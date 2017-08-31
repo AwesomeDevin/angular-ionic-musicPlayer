@@ -1,0 +1,39 @@
+﻿<link rel="stylesheet" type="text/css" href="css/search.css"/>
+<ion-view>
+	<ion-scroll  has-bouncing='false' class="search_content" style="background: white;position:relative;top:0.93rem;">
+		<div class="content" style="width: 100%;height: 0.56rem;background:#f4f4f4;">
+			
+			<label class="search">
+				<label ng-click="tap_search(1)" style="width:0.24rem;margin: 0;">
+				<i  class="icon"></i>
+				</label>
+				<input ng-focus="focus()" ng-model="search.txt" ng-keypress="Searching()"  type="search" placeholder="搜索歌曲、歌手" name=""/>
+				<label style="position: absolute;width: 0.48rem;height: 0.36rem;right: 0;top: 0;">
+					<button ng-click="blur()" ng-class="{'show':show}">取消</button>
+				</label>
+			</label>
+			
+		</div>
+
+		<ion-list class="search_list">
+			<ion-item ng-if="showheader" class="item-avatar-left">
+				<img ng-src="{{totaldata.contentlist[0].albumpic_small}}"/>
+				<div >
+					<h5>{{totaldata.w}}</h5>
+					<p>单曲：{{totaldata.allNum}}</p>
+				</div>
+			</ion-item>
+			<ion-item ng-click="search_play(item)" ng-repeat="item in totalnum">
+				<i></i>
+				<div>
+					<h5>{{item.songname}}</h5>
+					<p>{{item.singername}}</p>
+				</div>
+			</ion-item>
+			
+		</ion-list>
+		<ion-infinite-scroll ng-if="load_show"  on-infinite="Load_more()">
+		</ion-infinite-scroll>
+	</ion-scroll>
+
+</ion-view>

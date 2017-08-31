@@ -1,0 +1,20 @@
+img{display: block;}
+
+html, body, fieldset, img, iframe, abbr{width: 100%;}
+.slider-pager .slider-pager-page{color: rgba(144,144,144,.8);font-size: 0.12rem;transform: scale(0.5);}
+.slider-pager .slider-pager-page.active{opacity: 1;color: white;}
+.scroll-content{background: #f4f4f4;width: 100%;top: 0.93rem;}
+.slider{margin-bottom: 0.14rem;}
+.box dl{width: 1.46rem;height: 1.92rem;float: left;background: white;margin-bottom: 0.1rem;}
+.box dl dt img{width: 1.46rem;height: 1.46rem;}
+.box .item{display: flex;padding:0 0 0.07rem 0rem;justify-content: space-between;background: none;border:0;flex-wrap: wrap;}
+.box .list{padding: 0 0.1rem;}
+.box .list h5{margin-bottom: 0.11rem;font-size: 0.14rem;}
+.box .list dd{text-indent: 0.07rem;font-size: 0.14rem;font-family: '黑体';}
+.box dl dt{position: relative;margin-bottom: 0.05rem;}
+.box dl dt i{position: absolute;width: 0.24rem;height: 0.24rem;right: 0.05rem;bottom: 0.05rem;display: block;}
+.box dl dt i{background: url('../img/list_sprite.png') no-repeat;background-size: 0.24rem 0.6rem;}
+.box .list dd{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;width: 1.32rem;}
+.box .item p{line-height: 0.24rem;font-family: '黑体';}
+.box dl dt span{display: block;width: 0.1rem;height: 0.1rem;display: inline-block;background: url(../img/list_sprite.png) no-repeat 0 -0.5rem;background-size: 0.24rem 0.6rem;position: absolute;;left: 0.05rem;bottom: 0.07rem;}
+.box dl dt p{position: absolute;left: 0.2rem;bottom: 0rem;color: white;font-weight: 100;}

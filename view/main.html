@@ -1,0 +1,22 @@
+﻿<link rel="stylesheet" type="text/css" href="css/style.css">
+<ion-view >
+	<ion-header-bar  class="pageheader">
+		<i>扣扣音乐</i>
+		<a href="javascript:;" style="font-size:0.12rem;">Daivon</a>
+	</ion-header-bar>
+	<ion-tabs class="tabs-striped positive-bg tabs-top ">
+		<ion-tab title="推荐" href="#/advice">
+			<ion-nav-view name="main-advice">
+			</ion-nav-view>
+		</ion-tab>
+		<ion-tab title="排行榜" ui-sref="main.list">
+			<ion-nav-view name="main-list">
+			</ion-nav-view>
+		</ion-tab>
+		<ion-tab title="搜索" ui-sref="main.search">
+			<ion-nav-view name="main-search">
+			</ion-nav-view>
+		</ion-tab>
+		
+	</ion-tabs>
+</ion-view>

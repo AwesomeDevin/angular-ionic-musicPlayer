@@ -1,0 +1,9 @@
+﻿.pageheader{background: #31c27c;display: flex;flex-direction: row;justify-content: space-between;width: 100%;height: 0.44rem;align-items: center;}
+.pageheader i{width: 0.8rem;line-height:0.28rem !important;height:0.28rem !important;display: block;background-size: 0.9rem;font-family: "黑体";text-align: center;background: #149c5a;border-radius: 0.99rem; }
+.pageheader a{color: white;background: #149c5a;width: 0.78rem;height: 0.28rem;text-align: center;display: block;line-height: 0.28rem;border-radius: 0.99rem;}
+.tabs-top>.tabs, .tabs.tabs-top{background:white;color: rgba(0,0,0,0.6);border: 0;top: 0.44rem !important;height: 0.49rem;}
+.tabs span{font-family: '黑体';}
+.tab-item.activated, .tab-item.active, .tab-item.tab-item-active{color: #31c27c;box-sizing: border-box;}
+.tabs-striped .tab-item.activated, .tabs-striped .tab-item.active, .tabs-striped .tab-item.tab-item-active{border-color: #31c27c !important;}
+.tabs span{line-height: 0.49rem;font-size:0.13rem;}
+

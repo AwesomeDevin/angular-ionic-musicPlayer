@@ -1,0 +1,67 @@
+﻿<link rel="stylesheet" type="text/css" href="css/play.css">
+
+<ion-view>
+	<ion-content overflow-scroll="true" style="overflow: hidden"  class="play_main" has-bouncing='false'>
+		<img ng-src="{{obj.albumpic_big}}"/>
+		<div class="play_box">
+			<div ng-click="clickbody()" class="header">
+				<img ng-src="{{obj.albumpic_small}}"/>
+				<div class="text_box">
+					<h5>{{obj.songname}}</h5>
+					<p>{{obj.singername}}</p>
+				</div>
+				<i ng-class="{'play':isok}" ng-click="change_play()"></i>
+			</div>
+			<ion-scroll ng-click="clickbody()" delegate-handle="list" class="gc">
+					<ul style="width: 100%;overflow: hidden;">
+						<li class="playing"  ng-model="$index" ng-class="{'nowplay':current_play}" ng-repeat="item in song_txt">
+							{{item.text}}
+						</li>
+						<li style="height:0.42rem;" class="playing" >
+							
+						</li>
+					</ul>
+			</ion-scroll>
+
+
+			<div class=" footer_play" style="">
+				<div class="top">
+					<i ng-click="open_list()" class="left"></i>
+					<i class="right"></i>
+				</div>
+				<div class="middle">
+					<span class="start_time">{{current_time}}</span>
+					<div class="process">
+						<p ng-style="current_width"></p>
+					</div>
+					<span class="last_time">{{total_time}}</span>
+					<audio  id="music_play"  style="width:0%;" ng-src="{{getsrc(obj.url||obj.m4a)}}"  name="media"></audio>
+				</div>
+				<div class="bottom">
+					<a href="javascript:;"><span><i ng-click="jumpLast()" class="left"></i>
+						<div class="sk-folding-cube">
+  <div class="sk-cube1 sk-cube"></div>
+  <div class="sk-cube2 sk-cube"></div>
+  <div class="sk-cube4 sk-cube"></div>
+  <div class="sk-cube3 sk-cube"></div>
+</div>
+					<i ng-click="jumpNext()" class="right"></i></span></a>
+				</div>
+			</div>
+		</div>
+
+		<div id="sing_list" style="display:none;" class="sing_list">
+			<div class="list_header"><p>播放队列</p><span>({{data_slength}}首)</span></div>
+			<ion-scroll class="list_content">
+				<ul>
+					<li  ng-click="resert_play(item)" data-songid="item.songid" ng-repeat="item in data_s">
+						<p>{{item.songname}}</p><span>-{{item.singername}}</span>
+					</li>
+					
+				</ul>
+			</ion-scroll>
+			<div id="list_footer" class="list_footer" ng-click="close_list()"><p>关闭</p></div>
+			
+		</div>
+	</ion-content>
+</ion-view>
